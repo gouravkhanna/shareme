@@ -1,0 +1,32 @@
+Configurations
+Pre Requisites:
+Wamp Server 2.2 , Java 6 or 7, Phone Gap 2.8.1 
+1.	For Setting up Server for LAN AND wifi
+In Windows ,Control Panel, Windows Firewall, then Advance Settings,
+The inbound Rules, Click on New Rules on Right Hand Side
+1.	Rule Type :Port, Click Next
+2.	Protocols, Set Specific Local Port to 80
+3.	Click Next,Next
+4.	In Name Give Name port80
+5.	And Click Finish
+•	Set local ip of machine .(its Should be 192.168.1.170 )
+•	Run 192.168.1.170  is in Browser 
+•	Home Page of WampServer should be Displayed indicating Server is setup.
+•	Same should be run in mobile browser which should be connected to same network(WIFI) 
+•	And it should run the same wampserver page..
+2.	Configuration for WAMP
+1.	In httpd.conf , in section 
+<IfModule mod_fcgid.c>
+Add MaxRequestLen 20000000
+2.	In Php.ini
+Set max upload size  to 20
+ ex upload_max_filesize = 20M
+3.	Create mysql Database application Import application.sql file to the mysql database and username and password of db should be root
+4.	Download gs folder from github to C: /wamp/www and install application.apk to mobile
+5.	The Ip of local Machine Running wamp should be 192.168.1.170 (as it will act as server) and user can also access server from other computer. If App is not running so please check server is running and restart app after killing it properly. 
+
+Configuring of Phone gap 
+(only required for debugging app for android , APK file for android is upload in github)
+As given in link
+http://docs.phonegap.com/en/2.8.0/guide_getting-started_android_index.md.html#Getting%20Started%20with%20Android
+

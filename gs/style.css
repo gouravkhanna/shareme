@@ -1,0 +1,36 @@
+#shareme {
+	height:60px;
+	width:100%;
+	color: white;
+	background-color: black;
+	opacity:0.6;
+	text-align: center;
+	font-size: 3em;
+	font-family: cursive;
+	border-radius: 10px;
+}
+
+.header {
+	height:30px;
+	width:100%;
+	color: white;
+	background-color: blue;
+	opacity:0.6;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: cursive;
+	border-radius: 10px;
+}
+
+.floatl{
+color:white;
+font-size: 20px;
+float:left;
+opacity:1;	
+}
+.floatr{
+float:right;
+font-size: 20px;
+color:white;
+opacity:1;
+}
